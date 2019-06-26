@@ -19,24 +19,19 @@
       </h1>
       <form id="itemForm">
         <div class="form-group">
-          <label for="title">Title</label>
-          <input type="text" id="title" class="form-control" />
-        </div>
-        <div class="form-group">
-          <label for="description">Description</label>
-          <input type="text" id="description" class="form-control" />
+          <label for="item"><h3>Item</h3></label>
+          <input
+            type="text"
+            id="item"
+            class="form-control"
+            autocomplete="off"
+          />
         </div>
         <input type="submit" value="Add Item" class="btn btn-info btn-block" />
       </form>
       <h1 class="display-5 text-left mt-5">Item List:</h1>
-      <ul id="itemList" class="list-group">
-        <li
-          class="list-group-item d-flex justify-content-between align-items-center"
-        >
-          First Item
-          <span type="button" class="badge badge-info">X</span>
-        </li>
-      </ul>
+      <ul id="itemList" class="list-group"></ul>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
